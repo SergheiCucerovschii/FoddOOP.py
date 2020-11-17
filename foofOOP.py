@@ -20,7 +20,7 @@ def newDrink(name, volume, price, quantity):
     return drink
 
 def printFood(food):
-    print(f"{food.name:^7} {food.weight:^2}g.   = {food.price:^3} MDL | {food.quantity} portions available")
+    print(f"{food.name:^7} {food.weight:^2}g.  = {food.price:^3} MDL | {food.quantity} portions available")
 
 def printDrink(drink):
     print(f"{drink.name:^7} {drink.volume:^2}ml. = {drink.price:^3} MDL | {drink.quantity} pieces available")
@@ -32,7 +32,7 @@ def printItem(item):
         printDrink(item)
 
 
-food1 = newFood("BORSH", 50, 250, 10)
+food1 = newFood("BORSH", 250, 50, 10)
 drink1 = newDrink("PEPSI", 500, 15, 50)
 
 printItem(food1)
